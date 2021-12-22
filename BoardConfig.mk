@@ -12,48 +12,50 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/edo/PlatformConfig.mk
-
-TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %xqat51,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := XQ-AT51
-else ifneq (,$(filter %xqat52,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := XQ-AT52
-else
-TARGET_BOOTLOADER_BOARD_NAME := XQ-AT51
-$(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
-endif
-
-# Platform
-PRODUCT_PLATFORM := edo
+include device/motorola/sm4350-common/PlatformConfig.mk
 
 # Kernel cmdline
-BOARD_KERNEL_CMDLINE += androidboot.hardware=pdx203
-BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=pdx203
+BOARD_KERNEL_CMDLINE += \
+    androidboot.hab.csv=5 \
+    androidboot.hab.product=denver \
+    androidboot.hab.cid=50
+
+TARGET_BOOTLOADER_BOARD_NAME := denver
+
+# Platform
+PRODUCT_PLATFORM := holi
+
+# Kernel DTB/DTBO
+BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/osaka-kernel
+BOARD_PREBUILT_DTBOIMAGE := device/motorola/osaka-kernel/dtbo.img
+
+# Kernel Modules
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(wildcard device/motorola/osaka-kernel/5.4/*.ko)
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
+BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824 # (0x1800000)
 
-BOARD_ODMIMAGE_PARTITION_SIZE := 838860800 # (0x32000000)
-
-BOARD_SUPER_PARTITION_SIZE := 12348030976 # (0x2E0000000)
-BOARD_SUPER_PARTITION_GROUPS := sod_dynamic_partitions
+BOARD_SUPER_PARTITION_SIZE := 13958643712
+BOARD_SUPER_PARTITION_GROUPS := mot_dynamic_partitions
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 
 # Set error limit to SUPER_PARTITION_SIZE - 500MiB
-BOARD_SUPER_PARTITION_ERROR_LIMIT := 11823742976
+BOARD_SUPER_PARTITION_ERROR_LIMIT := 13446643712
 
 # DYNAMIC_PARTITIONS_SIZE = (SUPER_PARTITION_SIZE / 2) - 4MB
-BOARD_SOD_DYNAMIC_PARTITIONS_SIZE := 6169821184
-BOARD_SOD_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+BOARD_MOT_DYNAMIC_PARTITIONS_SIZE := 6169821184
+BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
+    system_ext \
     system \
-    vendor \
-    product
+    product \
+    vendor
 
 # Slightly overprovision dynamic partitions with 50MiB to
 # allow on-device file editing
+BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 52428800
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 52428800
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 52428800
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 52428800

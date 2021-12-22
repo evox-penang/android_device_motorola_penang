@@ -12,15 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_edo_pdx203_defconfig
-
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/pdx203/device.mk)
+$(call inherit-product, device/motorola/osaka/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_xqat51
-PRODUCT_DEVICE := pdx203
-PRODUCT_MODEL := Xperia 1 II (AOSP)
-PRODUCT_BRAND := Sony
-PRODUCT_MANUFACTURER := Sony
+PRODUCT_NAME := aosp_osaka
+PRODUCT_DEVICE := osaka
+PRODUCT_MODEL := Moto G Stylus 5G (AOSP)
+PRODUCT_BRAND := motorola
+PRODUCT_MANUFACTURER := motorola

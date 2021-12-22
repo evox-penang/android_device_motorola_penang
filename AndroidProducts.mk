@@ -12,11 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_xqat51.mk \
-                     $(LOCAL_DIR)/aosp_xqat52.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_osaka.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_xqat51-eng \
-    aosp_xqat51-userdebug \
-    aosp_xqat52-eng \
-    aosp_xqat52-userdebug
+    aosp_osaka-eng \
+    aosp_osaka-userdebug
