@@ -14,24 +14,18 @@
 
 include device/motorola/sm4350-common/PlatformConfig.mk
 
-# Kernel cmdline
-BOARD_KERNEL_CMDLINE += \
-    androidboot.hab.csv=5 \
-    androidboot.hab.product=denver \
-    androidboot.hab.cid=50
-
 TARGET_BOOTLOADER_BOARD_NAME := denver
 
 # Platform
 PRODUCT_PLATFORM := holi
 
 # Kernel DTB/DTBO
-BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/osaka-kernel
+BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/osaka-kernel/dtbs
 BOARD_PREBUILT_DTBOIMAGE := device/motorola/osaka-kernel/dtbo.img
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES := \
-    $(wildcard device/motorola/osaka-kernel/5.4/*.ko)
+    $(wildcard device/motorola/osaka-kernel/modules/*.ko)
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
