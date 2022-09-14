@@ -39,7 +39,7 @@
     <bool name="config_enableBurnInProtection">true</bool>
 
     <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">false</bool>
+    <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.sonymobile.com/I4213R5301.xml</string>
