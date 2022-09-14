@@ -353,16 +353,10 @@ vendor/firmware/boe_novatek_ts_mp.bin
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
 
-# Media
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-vendor/lib64/vendor.qti.hardware.vpp@2.0.so
-
 # QDCM
 vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_681.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_bod_1080p_681.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_681.xml
 
 # Thermal
-vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-denver.conf
