@@ -20,29 +20,8 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Enable doze mode
-         ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-
-    <!-- Whether the always on display mode is available. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-
-    <!-- Disable AOD by default -->
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>
-
-    <!-- If true, the doze component is not started until after the screen has been turned off
-         and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-
-    <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">true</bool>
-
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
-
-    <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.sonymobile.com/I4213R5301.xml</string>
 
     <!-- UI -->
     <string name="config_mainBuiltInDisplayCutout">M 130,0 L 0,0 L 0,90 L 130,90 Z @left</string>
