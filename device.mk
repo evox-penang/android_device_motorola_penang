@@ -15,8 +15,10 @@
 # Device path
 DEVICE_PATH := device/motorola/osaka/rootdir
 
-DEVICE_PACKAGE_OVERLAYS += \
-    device/motorola/osaka/overlay
+# Overlay
+PRODUCT_PACKAGES += \
+    osakaFrameworkOverlay \
+    osakaSystemUIOverlay
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
