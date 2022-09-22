@@ -156,6 +156,11 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/libvideooptfeature.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
+vendor/lib/libvidhance_dmbr.so
+vendor/lib/libvidhance_face_stabilizer.so
+vendor/lib/libvidhance_fbc.so
+vendor/lib/libvidhance_horizon_correction.so
+vendor/lib/libvidhance_stabilizer.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/camera/components/com.arcsoft.node.dc_capture.so
 vendor/lib64/camera/components/com.arcsoft.node.dc_preview.so
@@ -303,6 +308,11 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
+vendor/lib64/libvidhance_dmbr.so
+vendor/lib64/libvidhance_face_stabilizer.so
+vendor/lib64/libvidhance_fbc.so
+vendor/lib64/libvidhance_horizon_correction.so
+vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera Arcsoft
@@ -357,6 +367,3 @@ vendor/firmware/novatek_ts_mp.bin
 vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_681.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_bod_1080p_681.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_681.xml
-
-# Thermal
-vendor/etc/thermal-engine-denver.conf
