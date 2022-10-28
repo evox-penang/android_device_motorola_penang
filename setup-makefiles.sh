@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=osaka
+DEVICE=milanf
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks

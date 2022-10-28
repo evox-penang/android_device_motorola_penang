@@ -18,7 +18,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:compileSdkVersion="29"
-    package="org.omnirom.osaka.systemuioverlay"
+    package="org.omnirom.milanf.systemuioverlay"
     platformBuildVersionCode="29">
     <application android:extractNativeLibs="false"/>
     <overlay
