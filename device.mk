@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     milanfFrameworkOverlay \
     milanfSystemUIOverlay
 
+# Fingerprint
+TARGET_USES_EGISTEC_FINGERPRINT := true
+TARGET_USES_SILEAD_FINGERPRINT := true
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 
