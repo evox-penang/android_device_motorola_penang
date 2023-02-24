@@ -24,6 +24,11 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     device/motorola/milanf-kernel/Image:kernel
 
+# Device Init
+PRODUCT_PACKAGES += \
+    fstab.milanf \
+    vendor-fstab.milanf
+
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
