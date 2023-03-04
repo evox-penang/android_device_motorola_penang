@@ -23,8 +23,8 @@ PRODUCT_COPY_FILES += \
 
 # Device Init
 PRODUCT_PACKAGES += \
-    fstab.milanf \
-    vendor-fstab.milanf
+    fstab.qcom.vendor_ramdisk \
+    fstab.qcom
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
