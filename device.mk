@@ -17,10 +17,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Device path
 DEVICE_PATH := device/motorola/milanf/rootdir
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    device/motorola/milanf-kernel/Image:kernel
-
 # Device Init
 PRODUCT_PACKAGES += \
     fstab.qcom.vendor_ramdisk \
