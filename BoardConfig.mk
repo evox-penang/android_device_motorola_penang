@@ -12,15 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/motorola/sm4350-common/PlatformConfig.mk
-
 # Platform
 PRODUCT_PLATFORM := holi
+include device/motorola/sm4350-common/PlatformConfig.mk
 
 # Partition information
-BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
-BOARD_DTBOIMG_PARTITION_SIZE := 25165824 # (0x1800000)
-
 BOARD_SUPER_PARTITION_SIZE := 13958643712
 BOARD_SUPER_PARTITION_GROUPS := mot_dynamic_partitions
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
