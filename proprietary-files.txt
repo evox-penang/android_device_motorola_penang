@@ -264,7 +264,9 @@ vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+vendor/lib64/libBSTSWAD.so
 vendor/lib64/libbitmlengine.so
+vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxexternalformatutils.so
@@ -288,17 +290,20 @@ vendor/lib64/libfcell.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmot_afd.so
+vendor/lib64/libmotoisdataqueue.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
+vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtfestriping.so
+vendor/lib64/libundistort_impl.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
@@ -355,6 +360,11 @@ vendor/firmware/csot_novatek_ts_fw.bin
 vendor/firmware/mot_dw9781c.prog
 vendor/firmware/tianma_novatek_ts_fw.bin
 vendor/firmware/tm_novatek_ts_fw.bin
+
+# NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/lib64/libpn557_fw.so
 
 # QDCM
 vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_nt36672e_fhdp_678_120.xml

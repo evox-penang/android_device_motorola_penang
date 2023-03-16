@@ -40,6 +40,12 @@ PRODUCT_COPY_FILES += \
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_SILEAD_FINGERPRINT := true
 
+# NFC
+TARGET_USES_PN5XX_PN8X_NFC := true
+
+# Power
+TARGET_IS_BLAIR := true
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 
