@@ -40,6 +40,12 @@ PRODUCT_COPY_FILES += \
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_SILEAD_FINGERPRINT := true
 
+# Modules
+BOOT_KERNEL_MODULES := \
+    tcpc_sgm7220.ko \
+    tcpc_rt1711h.ko \
+    rt_pd_manager.ko
+
 # NFC
 TARGET_USES_PN5XX_PN8X_NFC := true
 

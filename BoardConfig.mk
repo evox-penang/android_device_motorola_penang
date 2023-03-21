@@ -17,11 +17,6 @@ PRODUCT_PLATFORM := holi
 include device/motorola/sm4350-common/PlatformConfig.mk
 
 # Modules
-BOARD_RECOVERY_KERNEL_MODULES := \
-    device/motorola/milanf-kernel/modules/tcpc_sgm7220.ko \
-    device/motorola/milanf-kernel/modules/tcpc_rt1711h.ko \
-    device/motorola/milanf-kernel/modules/rt_pd_manager.ko
-
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     tcpc_rt1711h.ko \
     tcpc_sgm7220.ko \
@@ -61,7 +56,13 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     wcd9xxx_dlkm.ko \
     wcd_core_dlkm.ko \
     wl2866d.ko \
+    wlan.ko \
     wsa881x_analog_dlkm.ko \
+    rt_pd_manager.ko
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
+    tcpc_sgm7220.ko \
+    tcpc_rt1711h.ko \
     rt_pd_manager.ko
 
 # Partition information
