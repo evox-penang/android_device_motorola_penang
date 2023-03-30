@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_SILEAD_FINGERPRINT := true
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
+
 # Modules
 BOOT_KERNEL_MODULES := \
     tcpc_sgm7220.ko \
