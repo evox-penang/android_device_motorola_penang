@@ -22,6 +22,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=420
 
+# Brightness
+SOONG_CONFIG_qtidisplay_brightness := true
+
 # Device path
 DEVICE_PATH := device/motorola/milanf/rootdir
 
