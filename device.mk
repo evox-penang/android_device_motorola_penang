@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_SILEAD_FINGERPRINT := true
 
+# Model
+PRODUCT_MODEL := moto g stylus 5g 2022
+
 # Modules
 BOOT_KERNEL_MODULES := \
     tcpc_sgm7220.ko \
