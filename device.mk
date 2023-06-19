@@ -31,11 +31,6 @@ DEVICE_CHARACTERISTICS += hfr
 # Device path
 DEVICE_PATH := device/motorola/milanf/rootdir
 
-# Device Init
-PRODUCT_PACKAGES += \
-    fstab.qcom.vendor_ramdisk \
-    fstab.qcom
-
 # Fingerprint
 TARGET_USES_EGISTEC_FINGERPRINT := true
 TARGET_USES_SILEAD_FINGERPRINT := true
