@@ -25,6 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Brightness
 SOONG_CONFIG_qtidisplay_brightness := true
 
+# Device characteristics
+DEVICE_CHARACTERISTICS += hfr
+
 # Device path
 DEVICE_PATH := device/motorola/milanf/rootdir
 
