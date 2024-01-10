@@ -42,9 +42,13 @@ PRODUCT_MODEL := moto g53j 5G
 
 # Modules
 BOOT_KERNEL_MODULES := \
+    sgm4154x_charger.ko \
+    bq2589x_charger.ko \
     tcpc_sgm7220.ko \
     tcpc_rt1711h.ko \
-    rt_pd_manager.ko
+    rt_pd_manager.ko \
+    focaltech_0flash_v2_mmi.ko \
+    nova_0flash_mmi.ko
 
 # NFC
 TARGET_USES_SN1XX_NFC := true
