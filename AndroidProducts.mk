@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(wildcard device/motorola/targets/devices/milanf/*.mk)
+PRODUCT_MAKEFILES := $(wildcard device/motorola/targets/devices/penang/*.mk)

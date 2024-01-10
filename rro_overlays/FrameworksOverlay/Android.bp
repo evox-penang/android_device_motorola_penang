@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "milanfFrameworksOverlay",
+    name: "penangFrameworksOverlay",
     vendor: true,
 }

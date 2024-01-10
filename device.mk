@@ -20,7 +20,7 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.sf.lcd_density=420
+    ro.sf.lcd_density=280
 
 # Brightness
 SOONG_CONFIG_qtidisplay_brightness := true
@@ -29,14 +29,14 @@ SOONG_CONFIG_qtidisplay_brightness := true
 DEVICE_CHARACTERISTICS += hfr
 
 # Device path
-DEVICE_PATH := device/motorola/milanf/rootdir
+DEVICE_PATH := device/motorola/penang/rootdir
 
 # Fingerprint
-TARGET_USES_EGISTEC_FINGERPRINT := true
-TARGET_USES_SILEAD_FINGERPRINT := true
+TARGET_USES_CHIPONE_FINGERPRINT := true
+TARGET_USES_FPC_FINGERPRINT := true
 
 # Model
-PRODUCT_MODEL := moto g stylus 5g 2022
+PRODUCT_MODEL := moto g53j 5G
 
 # Modules
 BOOT_KERNEL_MODULES := \
@@ -45,13 +45,10 @@ BOOT_KERNEL_MODULES := \
     rt_pd_manager.ko
 
 # NFC
-TARGET_USES_PN5XX_PN8X_NFC := true
-
-# Power
-TARGET_IS_BLAIR := true
+TARGET_USES_SN1XX_NFC := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 
 # include board vendor blobs
-$(call inherit-product-if-exists, vendor/motorola/milanf/milanf-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/penang/penang-vendor.mk)
