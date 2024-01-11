@@ -51,7 +51,7 @@ BOOT_KERNEL_MODULES := \
     nova_0flash_mmi.ko
 
 # NFC
-TARGET_USES_SN1XX_NFC := true
+TARGET_USES_PN5XX_PN8X_NFC := true
 
 # Configstore
 PRODUCT_PACKAGES += \
