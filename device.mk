@@ -73,6 +73,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     masterclear.allow_retain_esim_profiles_after_fdr=true
 
+# EvoX stuff
+EVO_BUILD_TYPE := COMMUNITY
+TARGET_BOOTANIMATION_RES := 720
+DEVICE_PACKAGE_OVERLAYS += device/motorola/penang/overlay-evolution
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 

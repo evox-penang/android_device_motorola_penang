@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2023 The Evolution X Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="build_maintainer_summary">lahaina</string>
+    <string name="build_maintainer_donate_url">https://misskey.io/@lahaina_RMX3031</string>
+</resources>
