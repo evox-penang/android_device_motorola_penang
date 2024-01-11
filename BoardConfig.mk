@@ -88,3 +88,6 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
     vendor
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/motorola/penang/device_framework_matrix.xml
