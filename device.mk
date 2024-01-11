@@ -59,7 +59,13 @@ PRODUCT_PACKAGES += \
 
 # Additional overlays
 PRODUCT_PACKAGES += \
-    penangRegulatoryInfoOverlay
+    penangRegulatoryInfoOverlay \
+    penangEuiccOverlay
+
+# The default value of this variable is false and should only be set to true when
+# the device allows users to retain eSIM profiles after factory reset of user data.
+PRODUCT_PRODUCT_PROPERTIES += \
+    masterclear.allow_retain_esim_profiles_after_fdr=true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
