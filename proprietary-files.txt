@@ -733,9 +733,6 @@ vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
 vendor/etc/libnfc-qrd-SN100.conf
 vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
 
-# NFC - Firmware
-vendor/lib64/libpn557_fw.so:vendor/lib64/libpn553_fw.so
-
 # Felica
 product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
