@@ -53,6 +53,10 @@ BOOT_KERNEL_MODULES := \
 # NFC
 TARGET_USES_SN1XX_NFC := true
 
+# Configstore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 
