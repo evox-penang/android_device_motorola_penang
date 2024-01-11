@@ -72,6 +72,10 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
     focaltech_0flash_v2_mmi.ko \
     nova_0flash_mmi.ko
 
+# Recovery
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
+
 # Partition information
 BOARD_SUPER_PARTITION_SIZE := 9831448576
 BOARD_SUPER_PARTITION_GROUPS := mot_dynamic_partitions
