@@ -36,5 +36,16 @@
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">@dimen/physical_power_button_center_screen_location_y</dimen>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">1dp</dimen>
+    <dimen name="status_bar_padding_top">0px</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">0dp</dimen>
+
+    <!-- Configure protection around the front-facing camera -->
+    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
+        M 662,72
+        a 48.45,48.45 0 1 0 96.9,0
+        a 48.45,48.45 0 1 0 -96.9,0
+        Z
+    </string>
 </resources>

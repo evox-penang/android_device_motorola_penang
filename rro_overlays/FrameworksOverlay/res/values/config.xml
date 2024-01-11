@@ -24,7 +24,7 @@
     <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- UI -->
-    <string name="config_mainBuiltInDisplayCutout">M -50,0 L 50,0 L 50,115 L -50,115 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 h -28.9 v 85 h 59.5 v -85 Z</string>
 
     <!-- Height of area above QQS where battery/time go. -->
     <dimen name="quick_qs_offset_height">@dimen/status_bar_height_portrait</dimen>
@@ -36,7 +36,7 @@
     <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
-    <dimen name="status_bar_height_portrait">40dp</dimen>
+    <dimen name="status_bar_height_portrait">32dp</dimen>
     <dimen name="status_bar_height_default">@*dimen/status_bar_height_portrait</dimen>
 
     <!-- The padding of the rounded corners -->
