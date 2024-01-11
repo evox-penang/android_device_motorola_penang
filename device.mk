@@ -57,6 +57,10 @@ TARGET_USES_SN1XX_NFC := true
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
+# Additional overlays
+PRODUCT_PACKAGES += \
+    penangRegulatoryInfoOverlay
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 
