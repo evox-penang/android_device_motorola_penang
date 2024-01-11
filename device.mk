@@ -62,6 +62,12 @@ PRODUCT_PACKAGES += \
     penangRegulatoryInfoOverlay \
     penangEuiccOverlay
 
+# SKU-specific overlays
+PRODUCT_PACKAGES += \
+    penangFrameworksOverlaySB \
+    penangSettingsProviderOverlaySB \
+    penangRegulatoryInfoOverlaySB
+
 # The default value of this variable is false and should only be set to true when
 # the device allows users to retain eSIM profiles after factory reset of user data.
 PRODUCT_PRODUCT_PROPERTIES += \
