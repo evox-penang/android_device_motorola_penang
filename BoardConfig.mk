@@ -18,8 +18,6 @@ include device/motorola/sm4350-common/PlatformConfig.mk
 
 # Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
-    sgm4154x_charger.ko \
-    bq2589x_charger.ko \
     wcd_core_dlkm.ko \
     wcd938x_dlkm.ko \
     q6_notifier_dlkm.ko \
@@ -60,6 +58,8 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     tcpc_sgm7220.ko \
     tcpc_rt1711h.ko \
     rt_pd_manager.ko \
+    sgm4154x_charger.ko \
+    bq2589x_charger.ko \
     nova_0flash_mmi.ko \
     focaltech_0flash_v2_mmi.ko
 
