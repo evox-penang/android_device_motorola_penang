@@ -23,6 +23,11 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
+    <!-- Whether the always on display mode is available. This should only be enabled
+         on devices where the display has been tuned to be power efficient in DOZE and/or
+         DOZE_SUSPEND states. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
+
     <!-- UI -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 h -28.9 v 85 h 59.5 v -85 Z</string>
 
