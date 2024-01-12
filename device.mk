@@ -73,7 +73,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # EvoX stuff
 EVO_BUILD_TYPE := COMMUNITY
-TARGET_BOOTANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 720
 DEVICE_PACKAGE_OVERLAYS += device/motorola/penang/overlay-evolution
 
 # Inherit from those products. Most specific first.
