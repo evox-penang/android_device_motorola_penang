@@ -415,12 +415,6 @@ vendor/bin/hvdcp_opti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
-# Configstore
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-
 # CVP
 vendor/lib/libcvp_common.so
 vendor/lib/libcvpcpuRev_skel.so
@@ -728,16 +722,11 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # NFC - configs
-vendor/etc/libnfc-nci_PN557.conf
-vendor/etc/libnfc-nci_PN560.conf
-vendor/etc/libnfc-nci_SN100.conf
-vendor/etc/libnfc-nci_SN220.conf
-vendor/etc/libnfc-nxp-pnscr.conf
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-mtp-SN100-UICC.conf
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/etc/libnfc-qrd-SN100.conf
-vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nci.conf
+
+# NFC - Firmware
+vendor/lib64/libpn557_fw.so
 
 # Felica
 product/etc/felica/common.cfg
