@@ -17,12 +17,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SCREEN_DENSITY := 280
 
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.sf.lcd_density=$(TARGET_SCREEN_DENSITY)
+# A/B
+AB_OTA_POSTINSTALL_CONFIG := \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=erofs \
+    POSTINSTALL_OPTIONAL_system=true
 
 # Brightness
 SOONG_CONFIG_qtidisplay_brightness := true
@@ -32,10 +37,6 @@ DEVICE_CHARACTERISTICS += hfr
 
 # Device path
 DEVICE_PATH := device/motorola/penang/rootdir
-
-# Fingerprint
-TARGET_USES_CHIPONE_FINGERPRINT := true
-TARGET_USES_FPC_FINGERPRINT := true
 
 # Model
 PRODUCT_MODEL := moto g53j 5G
@@ -51,10 +52,6 @@ BOOT_KERNEL_MODULES := \
 # NFC
 TARGET_USES_PN5XX_PN8X_NFC := true
 
-# Configstore
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
-
 # Additional overlays
 PRODUCT_PACKAGES += \
     penangRegulatoryInfoOverlay \
@@ -66,15 +63,7 @@ PRODUCT_PACKAGES += \
     penangSettingsProviderOverlaySB \
     penangRegulatoryInfoOverlaySB
 
-# The default value of this variable is false and should only be set to true when
-# the device allows users to retain eSIM profiles after factory reset of user data.
-PRODUCT_PRODUCT_PROPERTIES += \
-    masterclear.allow_retain_esim_profiles_after_fdr=true
-
 # EvoX stuff
-EVO_BUILD_TYPE := COMMUNITY
-TARGET_USES_MINI_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 720
 DEVICE_PACKAGE_OVERLAYS += device/motorola/penang/overlay-evolution
 
 # Inherit from those products. Most specific first.

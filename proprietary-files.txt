@@ -46,36 +46,10 @@ vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio configs
-vendor/etc/audio_ext_spkr.conf
-vendor/etc/audio_io_policy.conf
-vendor/etc/audio_platform_info.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/mixer_paths.xml
-vendor/etc/sound_trigger_mixer_paths.xml
-vendor/etc/sound_trigger_platform_info.xml
-
 # Audio firmware
 vendor/firmware/aw87xxx_acf.bin
 
-# Audio - soundfx
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libmmieffectswrapper.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libspeakerbundle.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-
 # Camera
-vendor/etc/pwr/PowerFeatureConfig.xml
-vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
@@ -409,12 +383,6 @@ vendor/lib64/camera/com.qti.tuned.mot_penang_ov02b10.bin
 vendor/lib64/camera/com.qti.tuned.mot_penang_s5k4h7.bin
 vendor/lib64/camera/com.qti.tuned.mot_penang_s5kjn1.bin
 
-# Charger
-vendor/bin/charge_only_mode
-vendor/bin/hvdcp_opti
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-vendor/etc/charger_fstab.qti
-
 # CVP
 vendor/lib/libcvp_common.so
 vendor/lib/libcvpcpuRev_skel.so
@@ -423,82 +391,14 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# CVP firmware
-vendor/firmware/evass-lt.b00
-vendor/firmware/evass-lt.b01
-vendor/firmware/evass-lt.b02
-vendor/firmware/evass-lt.b03
-vendor/firmware/evass-lt.b04
-vendor/firmware/evass-lt.b05
-vendor/firmware/evass-lt.b06
-vendor/firmware/evass-lt.b07
-vendor/firmware/evass-lt.b08
-vendor/firmware/evass-lt.b09
-vendor/firmware/evass-lt.b10
-vendor/firmware/evass-lt.b11
-vendor/firmware/evass-lt.b12
-vendor/firmware/evass-lt.b13
-vendor/firmware/evass-lt.b14
-vendor/firmware/evass-lt.b15
-vendor/firmware/evass-lt.b16
-vendor/firmware/evass-lt.b17
-vendor/firmware/evass-lt.b18
-vendor/firmware/evass-lt.b19
-vendor/firmware/evass-lt.mbn
-vendor/firmware/evass-lt.mdt
-vendor/firmware/evass.b00
-vendor/firmware/evass.b01
-vendor/firmware/evass.b02
-vendor/firmware/evass.b03
-vendor/firmware/evass.b04
-vendor/firmware/evass.b05
-vendor/firmware/evass.b06
-vendor/firmware/evass.b07
-vendor/firmware/evass.b08
-vendor/firmware/evass.b09
-vendor/firmware/evass.b10
-vendor/firmware/evass.b11
-vendor/firmware/evass.b12
-vendor/firmware/evass.b13
-vendor/firmware/evass.b14
-vendor/firmware/evass.b15
-vendor/firmware/evass.b16
-vendor/firmware/evass.b17
-vendor/firmware/evass.b18
-vendor/firmware/evass.b19
-vendor/firmware/evass.mbn
-vendor/firmware/evass.mdt
-
-# Diag
-vendor/bin/diag-router
-vendor/etc/init/vendor.qti.diag.rc
--vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
-vendor/lib/vendor.qti.diaghal@1.0.so
-vendor/lib64/vendor.qti.diaghal@1.0.so
-
-# Display (HDR)
-vendor/lib64/libhdr_stub.so
-vendor/lib64/libhdr_tm.so
-
-# Display (HWC)
-vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
-vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libsnapdragoncolor-manager.so
-vendor/lib64/libsnapdragoncolor-qdcm.so
-
 # Display calibration data
 vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_hd_653_720p_120.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_653_720p_120.xml
-vendor/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml
-vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml
-vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml
 
-# DRM
-vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
-vendor/etc/gpfspath_oem_config.xml
+# EUICC
+product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+product/etc/permissions/android.hardware.telephony.euicc.xml
+product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
@@ -515,123 +415,6 @@ vendor/lib64/libfp_ext_svc2.so
 vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# EID
-vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
-vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.eid@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.eid@1.0.so
-
-# Graphics - Adreno firmware
-vendor/firmware/a660_zap.b00
-vendor/firmware/a660_zap.b01
-vendor/firmware/a660_zap.b02
-vendor/firmware/a660_zap.elf
-vendor/firmware/a660_zap.mdt
-
-# IRQ balance
-vendor/etc/msm_irqbalance.conf
-
-# Listen
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2svarnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libmulawdec.so
-vendor/lib/libsmwrapper.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2svarnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-vendor/lib64/liblistensoundmodel2.so
-vendor/lib64/libmulawdec.so
-
-# Media - configs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_blair.xml
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/media_codecs_holi.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_performance_blair.xml
-vendor/etc/media_codecs_performance_holi.xml
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_blair.xml
-vendor/etc/media_profiles_holi.xml
-vendor/etc/media_profiles_vendor.xml
-
-# OMX
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libMpeghSwEnc.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxMpeghDecSw.so
-vendor/lib/libOmxMpeghEncSw.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libMpeghSwEnc.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxMpeghEncSw.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxWmaDec.so
-
-# Perf LM
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/sPLHFeature.xml
-vendor/lib64/libgameoptfeature.so
-
-# RIL - IMS
-vendor/bin/ims_rtp_daemon
-vendor/bin/imsdaemon
-vendor/etc/init/ims_rtp_daemon.rc
-vendor/etc/init/imsdaemon.rc
-vendor/etc/seccomp_policy/imsrtp.policy
-vendor/lib64/lib-imscommon.so
-vendor/lib64/lib-imsdpl.so
-vendor/lib64/lib-imsqimf.so
-vendor/lib64/lib-imsrcsservice.so
-vendor/lib64/lib-imsservice.so
-vendor/lib64/lib-imsvtcore.so
-vendor/lib64/lib-imsxml.so
-vendor/lib64/lib-rtpcommon.so
-vendor/lib64/lib-rtpcore.so
-vendor/lib64/lib-rtpsl.so
-vendor/lib64/librcc.so
-
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
@@ -643,77 +426,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
-
-# VPU firmware
-vendor/firmware/vpu20_1v.b01
-vendor/firmware/vpu20_1v.b02
-vendor/firmware/vpu20_1v.b03
-vendor/firmware/vpu20_1v.b04
-vendor/firmware/vpu20_1v.b05
-vendor/firmware/vpu20_1v.b06
-vendor/firmware/vpu20_1v.b07
-vendor/firmware/vpu20_1v.b08
-vendor/firmware/vpu20_1v.b09
-vendor/firmware/vpu20_1v.b10
-vendor/firmware/vpu20_1v.b11
-vendor/firmware/vpu20_1v.b12
-vendor/firmware/vpu20_1v.b13
-vendor/firmware/vpu20_1v.b14
-vendor/firmware/vpu20_1v.b15
-vendor/firmware/vpu20_1v.b16
-vendor/firmware/vpu20_1v.b17
-vendor/firmware/vpu20_1v.b18
-vendor/firmware/vpu20_1v.b19
-vendor/firmware/vpu20_1v.mbn
-vendor/firmware/vpu20_1v.mdt
-vendor/firmware/vpu20_1v_unsigned.mbn
-vendor/firmware/vpu20_2v.b01
-vendor/firmware/vpu20_2v.b02
-vendor/firmware/vpu20_2v.b03
-vendor/firmware/vpu20_2v.b04
-vendor/firmware/vpu20_2v.b05
-vendor/firmware/vpu20_2v.b06
-vendor/firmware/vpu20_2v.b07
-vendor/firmware/vpu20_2v.b08
-vendor/firmware/vpu20_2v.b09
-vendor/firmware/vpu20_2v.b10
-vendor/firmware/vpu20_2v.b11
-vendor/firmware/vpu20_2v.b12
-vendor/firmware/vpu20_2v.b13
-vendor/firmware/vpu20_2v.b14
-vendor/firmware/vpu20_2v.b15
-vendor/firmware/vpu20_2v.b16
-vendor/firmware/vpu20_2v.b17
-vendor/firmware/vpu20_2v.b18
-vendor/firmware/vpu20_2v.b19
-vendor/firmware/vpu20_2v.mbn
-vendor/firmware/vpu20_2v.mdt
-vendor/firmware/vpu20_2v_unsigned.mbn
-vendor/firmware/vpu20_4v.b01
-vendor/firmware/vpu20_4v.b02
-vendor/firmware/vpu20_4v.b03
-vendor/firmware/vpu20_4v.b04
-vendor/firmware/vpu20_4v.b05
-vendor/firmware/vpu20_4v.b06
-vendor/firmware/vpu20_4v.b07
-vendor/firmware/vpu20_4v.b08
-vendor/firmware/vpu20_4v.b09
-vendor/firmware/vpu20_4v.b10
-vendor/firmware/vpu20_4v.b11
-vendor/firmware/vpu20_4v.b12
-vendor/firmware/vpu20_4v.b13
-vendor/firmware/vpu20_4v.b14
-vendor/firmware/vpu20_4v.b15
-vendor/firmware/vpu20_4v.b16
-vendor/firmware/vpu20_4v.b17
-vendor/firmware/vpu20_4v.b18
-vendor/firmware/vpu20_4v.b19
-vendor/firmware/vpu20_4v.mbn
-vendor/firmware/vpu20_4v.mdt
-vendor/firmware/vpu20_4v_unsigned.mbn
-
-# GPS
-vendor/lib64/libcdfw_remote_api.so
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
@@ -733,12 +445,8 @@ product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
 product/etc/felica/mfs.cfg
 
-# OEM
+# OEM - STOPSHIP
 vendor/etc/vhw.xml
-
-# Sensors
-vendor/lib64/sensors.moto.so
-vendor/lib64/sensors.ssc.so
 
 # Sensor - configs
 vendor/etc/sensors/config/holi_bmi3x0.json
@@ -786,7 +494,6 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/proto/descriptor.proto
 vendor/etc/sensors/proto/mot_barocal.proto
 vendor/etc/sensors/proto/mot_camgest.proto
@@ -892,19 +599,7 @@ vendor/etc/thermal-engine-penang-game-perf.conf
 vendor/etc/thermal-engine-penang.conf
 vendor/etc/thermal-engine.conf
 
-# EUICC
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-product/etc/permissions/android.hardware.telephony.euicc.xml
-product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
-
 # Touch firmware
-vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin
-
-# WiFi
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
-
-# Misc
-vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv
 vendor/firmware/djn_novatek_ts_fw.bin
 vendor/firmware/djn_novatek_ts_mp.bin
+vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin

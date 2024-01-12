@@ -70,7 +70,6 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
 
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
-TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
 
 # Init
 TARGET_INIT_VENDOR_LIB := //device/motorola/penang:init_penang
@@ -95,6 +94,3 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
     vendor
-
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/motorola/penang/device_framework_matrix.xml
