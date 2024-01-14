@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     penangSettingsProviderOverlaySB \
     penangRegulatoryInfoOverlaySB
 
+# GCamGo
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V4
+
 # EvoX stuff
 DEVICE_PACKAGE_OVERLAYS += device/motorola/penang/overlay-evolution
 
