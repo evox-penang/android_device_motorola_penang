@@ -94,3 +94,6 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
     vendor
+
+# SELinux
+BOARD_SEPOLICY_DIRS += device/motorola/penang/sepolicy

@@ -33,7 +33,7 @@ AB_OTA_POSTINSTALL_CONFIG := \
 SOONG_CONFIG_qtidisplay_brightness := true
 
 # Device characteristics
-DEVICE_CHARACTERISTICS += hfr
+DEVICE_CHARACTERISTICS += hfr fm
 
 # Device path
 DEVICE_PATH := device/motorola/penang/rootdir
