@@ -5,5 +5,5 @@
 -->
 <resources>
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motog53s5G</string>
+    <string name="config_mms_user_agent" translatable="false">motog53y5G</string>
 </resources>

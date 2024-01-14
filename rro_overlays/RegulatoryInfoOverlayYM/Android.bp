@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "penangRegulatoryInfoOverlaySB",
+    name: "penangRegulatoryInfoOverlayYM",
     product_specific: true,
 }

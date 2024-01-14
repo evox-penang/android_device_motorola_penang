@@ -59,9 +59,11 @@ PRODUCT_PACKAGES += \
 
 # SKU-specific overlays
 PRODUCT_PACKAGES += \
+    penangFrameworksOverlayYM \
+    penangSettingsProviderOverlayYM \
+    penangRegulatoryInfoOverlayYM \
     penangFrameworksOverlaySB \
-    penangSettingsProviderOverlaySB \
-    penangRegulatoryInfoOverlaySB
+    penangSettingsProviderOverlaySB
 
 # GCamGo
 PRODUCT_PACKAGES += \

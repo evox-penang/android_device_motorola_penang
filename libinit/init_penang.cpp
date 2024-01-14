@@ -25,9 +25,18 @@ static const variant_info_t ym_info = {
     .build_fingerprint = "motorola/penang_sb/penang:13/T1TPJ33M.75-17-3/9c2f6:user/release-keys",
 };
 
+static const variant_info_t sb_info = {
+    .sku_value = "XT2335-6",
+
+    .model = "moto g53s 5G",
+    .name = "penang_sb",
+    .build_fingerprint = "motorola/penang_sb/penang:13/T1TPJ33M.75-17-3/9c2f6:user/release-keys",
+};
+
 static const std::vector<variant_info_t> variants = {
     global_info,
     ym_info,
+    sb_info,
 };
 
 void vendor_load_properties() {

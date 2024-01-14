@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.overlay.penang_sb">
+    package="android.overlay.penang_ym">
     <overlay android:targetPackage="android" android:isStatic="true" android:priority="601"
-             android:requiredSystemPropertyName="ro.boot.hardware.sku" android:requiredSystemPropertyValue="XT2335-6"/>
+             android:requiredSystemPropertyName="ro.boot.hardware.sku" android:requiredSystemPropertyValue="XT2335-4"/>
 </manifest>

@@ -1,4 +1,4 @@
-Moto g53j / g53y 5G
+Moto g53j / g53y / g53s 5G
 ============
 
 ## Copyrights
@@ -6,7 +6,7 @@ Copyright (C) Electimon 2023
 
 Copyright (C) Sony Mobile Communications 2020
 
-Copyright (C) Modded by lahaina 2023
+Copyright (C) Modded by lahaina 2024
 
 ## Device Tree
 
