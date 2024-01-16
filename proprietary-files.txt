@@ -438,7 +438,7 @@ vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nci.conf
 
 # NFC - Firmware
-vendor/lib64/libpn557_fw.so
+vendor/lib64/libpn557_fw.so:vendor/lib/libpn557_fw.so
 
 # Felica
 product/etc/felica/common.cfg
