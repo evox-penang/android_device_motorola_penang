@@ -97,3 +97,6 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/motorola/penang/sepolicy
+
+# HIDL
+DEVICE_MANIFEST_FILE += device/motorola/penang/manifest.xml
