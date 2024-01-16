@@ -458,6 +458,16 @@ product/etc/sysconfig/com.felicanetworks.mfw.a.boot.powersave.xml
 -product/priv-app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk;PRESIGNED
 -product/priv-app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk;PRESIGNED
 
+# QTI Secure Element
+vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+vendor/bin/hw/vendor.qti.secure_element@1.2-service
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+vendor/lib64/android.hardware.secure_element@1.0-impl.so
+vendor/lib64/vendor.qti.esepowermanager@1.0.so
+vendor/lib64/vendor.qti.esepowermanager@1.1.so
+
 # OEM - STOPSHIP
 vendor/etc/vhw.xml
 
