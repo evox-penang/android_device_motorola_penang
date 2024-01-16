@@ -434,7 +434,6 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # NFC - configs
-vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nci_SN100.conf
 
