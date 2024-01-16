@@ -436,9 +436,11 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # NFC - configs
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nci_SN100.conf
 
 # NFC - Firmware
-vendor/lib64/libpn557_fw.so:vendor/lib/libpn557_fw.so
+vendor/lib/libsn100u_fw.so
+vendor/lib64/libsn100u_fw.so
 
 # Felica
 product/etc/felica/common.cfg

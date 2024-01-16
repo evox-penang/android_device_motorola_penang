@@ -53,6 +53,9 @@ BOOT_KERNEL_MODULES := \
 TARGET_USES_PN5XX_PN8X_NFC := true
 TARGET_ADDITIONAL_QTI_COMPONENTS += nfc
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.nfc_cfg.config_file_name=libnfc-nci_SN100.conf
+
 # Additional overlays
 PRODUCT_PACKAGES += \
     penangRegulatoryInfoOverlay \
