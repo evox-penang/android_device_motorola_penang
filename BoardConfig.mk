@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Platform
 PRODUCT_PLATFORM := holi
 include device/motorola/sm4350-common/PlatformConfig.mk
