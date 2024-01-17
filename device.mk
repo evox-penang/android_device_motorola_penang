@@ -62,9 +62,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
-# Additional overlays
+# Hardware-specific overlays
 PRODUCT_PACKAGES += \
-    penangRegulatoryInfoOverlay \
     penangEuiccOverlay \
     penangNfcOverlay
 
