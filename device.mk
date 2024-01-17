@@ -65,7 +65,8 @@ PRODUCT_COPY_FILES += \
 # Additional overlays
 PRODUCT_PACKAGES += \
     penangRegulatoryInfoOverlay \
-    penangEuiccOverlay
+    penangEuiccOverlay \
+    penangNfcOverlay
 
 # SKU-specific overlays
 PRODUCT_PACKAGES += \
