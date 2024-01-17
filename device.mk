@@ -51,10 +51,11 @@ BOOT_KERNEL_MODULES := \
 
 # NFC
 TARGET_USES_SN1XX_NFC := true
-TARGET_ADDITIONAL_QTI_COMPONENTS += nfc
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.nfc_cfg.config_file_name=libnfc-nci_SN100.conf
+
+include device/qcom/common/vendor/nfc/qti-nfc.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \
