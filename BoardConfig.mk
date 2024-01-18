@@ -97,6 +97,10 @@ BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     product \
     vendor
 
+# Fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/vendor/etc/fstab.qcom
+PRODUCT_COPY_FILES += $(TARGET_RECOVERY_FSTAB):$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/motorola/penang/sepolicy
 
