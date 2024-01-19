@@ -86,6 +86,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt-V4
 
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
+    $(DEVICE_PATH)/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 # EvoX stuff
 DEVICE_PACKAGE_OVERLAYS += device/motorola/penang/overlay-evolution
 
