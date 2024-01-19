@@ -51,6 +51,7 @@ BOOT_KERNEL_MODULES := \
 
 # NFC
 TARGET_USES_SN1XX_NFC := true
+PRODUCT_PACKAGES += NQNfcNci
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.nfc_cfg.config_file_name=libnfc-nci_SN100.conf
