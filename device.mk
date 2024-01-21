@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Hardware-specific overlays
 PRODUCT_PACKAGES += \
+    penangRegulatoryInfoOverlay \
     penangEuiccOverlay \
     penangNfcOverlay
 
