@@ -447,18 +447,6 @@ product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
 product/etc/felica/mfs.cfg
 
-# Felica - Configs
-product/etc/sysconfig/com.felicanetworks.mfc.powersave.xml
-product/etc/sysconfig/com.felicanetworks.mfs.powersave.xml
-product/etc/sysconfig/com.felicanetworks.mfm.main.powersave.xml
-product/etc/sysconfig/com.felicanetworks.mfw.a.boot.powersave.xml
-
-# Felica - APK
--product/priv-app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
--product/priv-app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk;PRESIGNED
--product/priv-app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk;PRESIGNED
--product/priv-app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk;PRESIGNED
-
 # QTI Secure Element
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
