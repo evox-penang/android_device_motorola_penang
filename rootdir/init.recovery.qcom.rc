@@ -1,0 +1,9 @@
+on boot
+    start load_ts_firmware
+
+service load_ts_firmware /system/bin/load_ts_firmware.sh
+    oneshot
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0

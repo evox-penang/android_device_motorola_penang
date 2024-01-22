@@ -98,6 +98,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     $(DEVICE_PATH)/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
+# Recovery touch init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc \
+    $(DEVICE_PATH)/load_ts_firmware.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/load_ts_firmware.sh
+
 # EvoX stuff
 DEVICE_PACKAGE_OVERLAYS += device/motorola/penang/overlay-evolution
 
