@@ -1,0 +1,12 @@
+# NFC
+persist.nfc_cfg.config_file_name=libnfc-nci_SN100.conf
+
+# SurfaceFlinger
+debug.sf.auto_latch_unsignaled=1
+debug.sf.boost_sf_on_touch=true
+debug.sf.enable_hwc_vds=0
+debug.sf.force_cpuset_system_default=1
+debug.sf.force_populate_color_modes=true
+debug.sf.latch_unsignaled=0
+debug.sf.scroll_boost_refreshrate=120
+debug.sf.touch_boost_refreshrate=90

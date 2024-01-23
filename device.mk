@@ -57,10 +57,6 @@ PRODUCT_PACKAGES += \
     NQNfcNci \
     com.nxp.nfc.nq
 
-# NFC - Select config
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.nfc_cfg.config_file_name=libnfc-nci_SN100.conf
-
 # NFC - Include common qti-nfc blobs
 include device/qcom/common/vendor/nfc/qti-nfc.mk
 
