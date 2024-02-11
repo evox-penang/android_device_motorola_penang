@@ -50,7 +50,7 @@ BOOT_KERNEL_MODULES := \
     nova_0flash_mmi.ko
 
 # NFC
-TARGET_USES_SN1XX_NFC := true
+TARGET_USES_NXP_NFC := true
 
 # NFC - Packages required
 PRODUCT_PACKAGES += \

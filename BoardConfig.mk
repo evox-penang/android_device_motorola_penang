@@ -105,5 +105,8 @@ BOARD_SEPOLICY_DIRS += device/motorola/penang/sepolicy
 DEVICE_MANIFEST_FILE += device/motorola/penang/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/motorola/penang/device_framework_matrix.xml
 
+# Gapps
+TARGET_USES_PICO_GAPPS := true
+
 # Properties
 TARGET_SYSTEM_PROP += device/motorola/penang/system.prop
